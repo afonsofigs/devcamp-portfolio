@@ -6,7 +6,8 @@
 <%= link_to "Create new Item", new_portfolio_url %>
 
 <% @portfolio_items.each do |portfolio_item| %>
-  <p><%= portfolio_item.title %></p>
+  <%# link title click to show portfolio %>
+  <p><%= link_to portfolio_item.title, portfolio_path(portfolio_item.id)  %></p>
   <p><%= portfolio_item.subtitle %></p>
   <p><%= portfolio_item.body %></p>
   <%# image_tag é um method para transformar a string em imagem, aqui temos show image unless its null para bão criar erros %>
