@@ -14,5 +14,6 @@
   <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil?  %>
   <%#<a href="portfolios/<%= portfolio_item.id %\>/edit">Edit</a>%>
   <%= link_to "Edit", edit_portfolio_path(portfolio_item.id) %>
+  <%= link_to 'Delete Portfolio', portfolio_path(portfolio_item.id), method: :delete, data: { confirm: 'Are you sure?' } %>
 
 <% end %>
