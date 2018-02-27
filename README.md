@@ -28,7 +28,7 @@ Things you may want to cover:
 
 -->
 
-> This is a RoR 5 app that allows users to create their own portfolios.
+> This is a ROR 5 app that allows users to create their own portfolios.
 
 ### Features
 
