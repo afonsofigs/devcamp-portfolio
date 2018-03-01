@@ -5,4 +5,5 @@ class Blog < ApplicationRecord
 
   #Unless these are filled it wont create a post
   validates_presence_of :title, :body
+  belogs_to :topic
 end
