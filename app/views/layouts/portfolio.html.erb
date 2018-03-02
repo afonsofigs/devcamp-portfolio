@@ -18,8 +18,6 @@
     <!-- This is the rest of the body, yield = body -->
     <%= yield %>
     <!-- This is the under the body, yield = body -->
-    <% if session[:source] %>
-      <p>Thanks for visiting me from <%= session[:source] %></p>
-    <% end %>
+    <%= source_helper("application") %>
   </body>
 </html>
