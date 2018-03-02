@@ -21,7 +21,7 @@
     <!-- This is the rest of the body, yield = body -->
     <%= yield %>
     <!-- This is the under the body, yield = body -->
-    <%= render 'shared/nav' %>
+    <%= render 'shared/nav', location: 'bottom' %>
     <% if session[:source] %>
       <p>Thanks for visiting me from <%= session[:source] %></p>
     <% end %>
