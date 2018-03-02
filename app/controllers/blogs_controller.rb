@@ -7,6 +7,7 @@ class BlogsController < ApplicationController
   def index
     # Blog.limit(1) will only show the 1st one
     @blogs = Blog.all
+    @page_title = "My portfolio blog"
     # Call all blogs from the db and make it available to the @blogs var, then the view page can call that
   end
 
@@ -14,6 +15,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1.json
   # On line 2, the before_action calls the :set_blog method, as if the before_action def (defined on private), is inside this show def
   def show
+    @page_title = @blog.title
   end
 
   # GET /blogs/new
