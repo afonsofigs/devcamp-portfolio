@@ -21,13 +21,7 @@
     <!-- This is the rest of the body, yield = body -->
     <%= yield %>
     <!-- This is the under the body, yield = body -->
-    <div>
-      <div><%= link_to "Home", root_path %></div>
-      <div><%= link_to "About", about_me_path %></div>
-      <div><%= link_to "Contact", contact_path %></div>
-      <div><%= link_to "Blog", blogs_path %></div>
-      <div><%= link_to "Portfolio", portfolios_path %></div>
-    </div>
+    <%= render 'shared/nav' %>
     <% if session[:source] %>
       <p>Thanks for visiting me from <%= session[:source] %></p>
     <% end %>
