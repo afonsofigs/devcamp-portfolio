@@ -55,3 +55,5 @@ gem 'friendly_id', '~> 5.1.0'
 #gem "spring", group: :development
 #Devise
 gem 'devise', '~> 4.4', '>= 4.4.1'
+#Bootstrap
+gem 'bootstrap', '~> 4.0.0'
